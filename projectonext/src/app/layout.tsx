@@ -1,5 +1,5 @@
 
-
+import { Header } from "@/Components/header";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,8 +8,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        {children}
+        >
+          <Header />
+      {children}
       </body>
     </html>
   );
